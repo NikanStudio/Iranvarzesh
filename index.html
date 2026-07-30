@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Persian Football</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="top-bar">
+
+<img src="logo.png" alt="Iran Football Logo" width="90">
+
+
+<span>⚽ Persian Varzesh</span>
+
+<span>جدیدترین اخبار و نتایج فوتبال</span>
+
+</div>
+
+
+<header>
+<input type="text" id="searchBox" placeholder="🔍 جستجوی لیگ...">
+<div id="leagueList">
+    <a href="league.html?id=4328" class="league-item">🇬🇧 لیگ برتر انگلیس</a><br>
+    <a href="league.html?id=4335" class="league-item">🇪🇸 لالیگا</a><br>
+    <a href="league.html?id=4332" class="league-item">🇮🇹 سری آ</a><br>
+    <a href="league.html?id=4331" class="league-item">🇩🇪 بوندس‌لیگا</a><br>
+    <a href="league.html?id=4334" class="league-item">🇫🇷 لیگ فرانسه</a>
+</div>
+<h1> Persian Varzesh </h1>
+
+<p>مرجع اخبار و نتایج فوتبال ایران و جهان</p>
+
+</header>
+
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰ منو
+</button>
+
+
+<nav id="menu">
+
+<a href="index.html">🏠 خانه</a>
+
+<a href="news.html">📰 اخبار</a>
+
+
+
+</nav>
+<a href="index.html">🏠 خانه</a>
+
+<a href="news.html">📰 اخبار</a>
+
+<a href="about.html">ℹ️ درباره ما</a>
+
+<hr>
+
+<h3>📧 ارتباط با ما</h3>
+
+<p>
+ایمیل:
+<b>Niksoly.gmail.com</b>
+</p>
+
+</nav>
+
+
+
+<div class="theme-box">
+
+<button onclick="toggleTheme()">
+🌙 حالت شب
+</button>
+
+</div>
+
+
+<div class="search-box">
+
+<input 
+type="text" 
+id="searchInput" 
+placeholder="🔍 جستجو..."
+>
+
+</div>
+
+
+
+<h2>🏆 لیگ‌های معتبر</h2>
+
+
+<div class="card">
+
+<a href="league.html?id=4328">
+🇬🇧 لیگ برتر انگلیس
+</a>
+
+</div>
+
+
+<div class="card">
+
+<a href="league.html?id=4335">
+🇪🇸 لالیگا
+</a>
+
+</div>
+
+
+<div class="card">
+
+<a href="league.html?id=4332">
+🇮🇹 سری آ ایتالیا
+</a>
+
+</div>
+
+
+<div class="card">
+
+<a href="league.html?id=4331">
+🇩🇪 بوندس لیگا
+</a>
+
+</div>
+
+
+<div class="card">
+
+<a href="league.html?id=4334">
+🇫🇷 لیگ فرانسه
+</a>
+
+</div>
+
+
+
+<section class="hero">
+
+<img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=1200">
+
+<div>
+
+<h2>🔥 خبر ویژه</h2>
+
+<p>
+آخرین اخبار فوتبال ایران و جهان را دنبال کنید.
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<h2>📰 آخرین اخبار</h2>
+<a href="news.html">
+
+<button>📰 مشاهده همه اخبار</button>
+
+</a>
+
+<div class="card">
+
+<h3>
+اخبار فوتبال
+</h3>
+
+<p>
+اخبار جدید فوتبال به زودی در این بخش قرار می‌گیرد.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+نقل و انتقالات فوتبال
+</h3>
+
+<p>
+آخرین اخبار خرید و فروش بازیکنان.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+<h2>⚽ نتایج سریع</h2>
+
+
+<div class="card">
+
+<p>
+درحال حاضر ، بازی ای وجود ندارد
+</p>
+
+</div>
+
+
+<div class="card">
+
+<p>
+ــ
+</p>
+
+</div>
+
+
+<div class="card">
+
+<p>
+ــ
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<button id="topBtn" onclick="goTop()">
+⬆
+</button>
+
+
+
+<script src="script.js"></script>
+
+<footer class="footer">
+  <p>© 2026 Persian Varzesh | تمامی حقوق محفوظ است.</p>
+  <p>📧 : Niksoly@gmail.com </p>
+</footer>
+</body>
+<script>
+let slides = document.querySelectorAll(".slide");
+let current = 0;
+
+setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+}, 4000);
+</script>
+</html><section class="slider">
+  <div class="slide active">
+    <img src="https://picsum.photos/800/350?1" alt="">
+    <div class="caption">
+    ا
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://picsum.photos/800/350?2" alt="">
+    <div class="caption">
+      
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="https://picsum.photos/800/350?3" alt="">
+    <div class="caption">
+  
+    </div>
+  </div>
+</section>
