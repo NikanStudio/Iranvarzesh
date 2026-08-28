@@ -3,13 +3,101 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>لیگ</title>
+    <!-- SEO -->
+    <title>لیگ فوتبال | نتایج، جدول و بازی‌های آینده | پرشین ورزش</title>
 
-<link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="مشاهده نتایج، جدول و بازی‌های آینده لیگ‌های معتبر فوتبال در پرشین ورزش."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large"
+    >
+
+    <meta name="author" content="Persian Varzesh">
+
+    <link
+        rel="canonical"
+        id="canonicalLink"
+        href="https://nikanstudio.github.io/Iranvarzesh/league.html"
+    >
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:title"
+        id="ogTitle"
+        content="لیگ فوتبال | پرشین ورزش"
+    >
+
+    <meta
+        property="og:description"
+        id="ogDescription"
+        content="نتایج، جدول و بازی‌های آینده لیگ فوتبال در پرشین ورزش."
+    >
+
+    <meta
+        property="og:site_name"
+        content="پرشین ورزش"
+    >
+
+    <meta
+        property="og:locale"
+        content="fa_IR"
+    >
+
+    <meta
+        property="og:url"
+        id="ogUrl"
+        content="https://nikanstudio.github.io/Iranvarzesh/league.html"
+    >
+
+    <meta
+        property="og:image"
+        content="https://nikanstudio.github.io/Iranvarzesh/logo.png"
+    >
+
+    <!-- Twitter -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        id="twitterTitle"
+        content="لیگ فوتبال | پرشین ورزش"
+    >
+
+    <meta
+        name="twitter:description"
+        id="twitterDescription"
+        content="نتایج، جدول و بازی‌های آینده لیگ فوتبال."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://nikanstudio.github.io/Iranvarzesh/logo.png"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0d8f45"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
 
@@ -17,58 +105,84 @@
 <body>
 
 
-<header>
+    <header>
 
-<h1 id="leagueTitle">
-⚽ لیگ
-</h1>
+        <h1 id="leagueTitle">
+            ⚽ لیگ فوتبال
+        </h1>
 
-<img id="leagueBadge" width="100">
+        <img
+            id="leagueBadge"
+            width="100"
+            height="100"
+            alt="لوگوی لیگ فوتبال"
+        >
 
-<p>
-برنامه و نتایج لیگ
-</p>
+        <p id="leagueDescription">
+            برنامه، نتایج و جدول لیگ فوتبال
+        </p>
 
-</header>
-
-
-
-<h2>📅 بازی‌های آینده</h2>
-
-<div id="matches"></div>
-
+    </header>
 
 
-<h2>🏁 آخرین نتیجه</h2>
-
-<div id="lastMatch"></div>
+    <main>
 
 
+        <section aria-labelledby="futureMatchesTitle">
+
+            <h2 id="futureMatchesTitle">
+                📅 بازی‌های آینده
+            </h2>
+
+            <div id="matches">
+                در حال دریافت اطلاعات بازی‌ها...
+            </div>
+
+        </section>
 
 
-<h2>📊 جدول لیگ</h2>
+        <section aria-labelledby="lastMatchTitle">
 
-<div id="leagueTable"></div>
+            <h2 id="lastMatchTitle">
+                🏁 آخرین نتیجه
+            </h2>
 
+            <div id="lastMatch">
+                در حال دریافت آخرین نتیجه...
+            </div>
 
-
-
-<br>
-
-
-<a href="index.html">
-
-<button>
-🏠 بازگشت
-</button>
-
-</a>
+        </section>
 
 
-<script>
+        <section aria-labelledby="leagueTableTitle">
 
-</script>
-<script src="script.js"></script>
+            <h2 id="leagueTableTitle">
+                📊 جدول لیگ
+            </h2>
+
+            <div id="leagueTable">
+                در حال دریافت جدول لیگ...
+            </div>
+
+        </section>
+
+
+        <br>
+
+
+        <a href="index.html">
+
+            <button type="button">
+                🏠 بازگشت به صفحه اصلی
+            </button>
+
+        </a>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
 
 
 </body>
